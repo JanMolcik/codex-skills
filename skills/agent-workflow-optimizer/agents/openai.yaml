@@ -1,0 +1,6 @@
+interface:
+  display_name: "Agent Workflow Optimizer"
+  short_description: "Audit and harden agent workflow using harness-first evals, conformance suites, and anti-drift gates"
+  default_prompt: "Use $agent-workflow-optimizer to audit workflow maturity (M0-M3), choose Bootstrap/Retrofit/Harden mode, then apply the smallest high-leverage fixes in order: harness + evals, spec hierarchy + conformance, ARCHITECTURE.md + structural checks, iteration protocol + verify gates. Treat hierarchy and architecture drift as CI failures and report findings/edits/gaps."
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Git pro lidi"
+  short_description: "Bezpečný Git pro netechnické uživatele"
+  default_prompt: "Použij $git-pro-lidi pro kontrolu existujícího Git projektu a vysvětli nejbezpečnější další krok česky a srozumitelně."
+policy:
+  allow_implicit_invocation: true

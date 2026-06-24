@@ -1,0 +1,6 @@
+interface:
+  display_name: "Plain Git for Humans"
+  short_description: "Safe Git workflows for non-technical users"
+  default_prompt: "Use $plain-git-for-humans to check this existing Git project and explain the safest next step in plain language."
+policy:
+  allow_implicit_invocation: true

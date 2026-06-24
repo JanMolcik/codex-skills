@@ -1,7 +1,6 @@
 ---
 name: git-pro-lidi
-disable-model-invocation: true
-description: 'Ručně spouštěná pomůcka pro netechnické česky mluvící uživatele v existujících Git repozitářích. Vyvolej výslovně pro fráze: ulož mi práci, uloz mi praci, bezpečné uložení, bezpecne ulozeni, checkpoint, commit, zazálohuj to, zazalohuj to, záloha, zaloha, pošli to do cloudu, posli to do cloudu, sdílej to, sdilej to, stáhni poslední změny, stahni posledni zmeny, pull, push, merge, spoj naši práci, spoj nasi praci, sluč to, sluc to, co se změnilo, co se zmenilo, vrať to zpátky, vrat to zpatky, konflikt, Git pro lidi. Nepoužívej pro worktrees, rebase-first postupy ani kompletní nastavování GitHub účtu.'
+description: 'Provází netechnické česky mluvící uživatele existujícími Git repozitáři běžnou češtinou. Použij při frázích: ulož mi práci, uloz mi praci, bezpečné uložení, bezpecne ulozeni, checkpoint, commit, zazálohuj to, zazalohuj to, záloha, zaloha, pošli to do cloudu, posli to do cloudu, sdílej to, sdilej to, stáhni poslední změny, stahni posledni zmeny, pull, push, merge, spoj naši práci, spoj nasi praci, sluč to, sluc to, co se změnilo, co se zmenilo, vrať to zpátky, vrat to zpatky, konflikt, Git pro lidi. Nepoužívej pro worktrees, rebase-first postupy ani kompletní nastavování GitHub účtu.'
 ---
 
 # Git pro lidi

@@ -1,69 +1,56 @@
 # Agent Skills
 
-Small public repository for shareable agent skills. The skills are written as
-plain `SKILL.md` packages so they can be used from OpenAI Codex and Claude Code.
+Shareable skills for OpenAI Codex and Claude Code.
+
+## Included Skills
+
+| Skill | Folder |
+| --- | --- |
+| Agent Workflow Optimizer | `skills/agent-workflow-optimizer` |
+| Plain Git for Humans | `skills/plain-git-for-humans` |
+| Git pro lidi | `skills/git-pro-lidi` |
 
 ## Install In Codex
 
-Install the latest version of `agent-workflow-optimizer` with the Codex skill installer:
+Use the Codex skill installer with the GitHub URL for the skill folder.
 
 ```bash
 $skill-installer install https://github.com/JanMolcik/codex-skills/tree/main/skills/agent-workflow-optimizer
-```
-
-Install the pinned `v0.1.0` release:
-
-```bash
-$skill-installer install https://github.com/JanMolcik/codex-skills/tree/v0.1.0/skills/agent-workflow-optimizer
-```
-
-The skill is configured for explicit invocation only. It will not auto-trigger.
-
-Install the latest version of `plain-git-for-humans`:
-
-```bash
 $skill-installer install https://github.com/JanMolcik/codex-skills/tree/main/skills/plain-git-for-humans
-```
-
-Install the latest version of `git-pro-lidi`:
-
-```bash
 $skill-installer install https://github.com/JanMolcik/codex-skills/tree/main/skills/git-pro-lidi
 ```
 
 ## Install In Claude Code
 
-Claude Code loads skills from `~/.claude/skills/<skill-name>/SKILL.md` for
-personal use or `.claude/skills/<skill-name>/SKILL.md` for project use.
+Claude Code loads skills from local folders:
 
-To install manually, copy one skill directory from `skills/` into one of those
-locations. For example:
+- Personal skills: `~/.claude/skills/<skill-name>/SKILL.md`
+- Project skills: `.claude/skills/<skill-name>/SKILL.md`
+
+First get this repository onto your machine:
+
+```bash
+git clone https://github.com/JanMolcik/codex-skills.git
+cd codex-skills
+```
+
+Then copy one skill folder.
+
+Personal install:
 
 ```bash
 mkdir -p ~/.claude/skills
 cp -R skills/plain-git-for-humans ~/.claude/skills/
-cp -R skills/git-pro-lidi ~/.claude/skills/
 ```
 
-## Included Skills
+Project install:
 
-- `agent-workflow-optimizer`
-- `plain-git-for-humans`
-- `git-pro-lidi`
-
-## Layout
-
-Skills live under `skills/<skill-name>/` so each directory can be installed or
-copied directly.
-
-Each skill follows the open Agent Skills shape:
-
-```text
-skills/<skill-name>/
-├── SKILL.md
-├── agents/openai.yaml      # optional Codex UI/invocation metadata
-└── references/             # optional just-in-time reference material
+```bash
+mkdir -p /path/to/project/.claude/skills
+cp -R skills/plain-git-for-humans /path/to/project/.claude/skills/
 ```
 
-`agents/openai.yaml` is optional Codex metadata. Claude Code ignores that
-directory and reads `SKILL.md` plus referenced supporting files.
+Replace `plain-git-for-humans` with any folder from the Included Skills table.
+
+Without Git, download the repository ZIP from GitHub and copy one folder from
+`skills/` into `~/.claude/skills/` or `.claude/skills/`.

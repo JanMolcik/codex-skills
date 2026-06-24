@@ -1,7 +1,6 @@
 ---
 name: plain-git-for-humans
-disable-model-invocation: true
-description: 'Manual-only guide for helping non-technical users work with existing Git repositories in plain language. Invoke explicitly for requests such as save my work, checkpoint, commit, back this up, backup, share this, send to cloud, push, get latest, pull changes, sync, combine our work, merge, show what changed, diff, history, undo, revert, restore, conflict, or Git help for a non-technical or vibe-coding user. Use for simple commit, push, pull, and merge workflows with consequence explanations. Do not use for advanced Git history surgery, worktrees, rebase-first workflows, or full Git/GitHub account setup.'
+description: 'Guides non-technical users through existing Git repositories in plain language. Use when the user asks to save my work, checkpoint, commit, back this up, backup, share this, send to cloud, push, get latest, pull changes, sync, combine our work, merge, show what changed, diff, history, undo, revert, restore, conflict, or Git help for a non-technical or vibe-coding user. Use for simple commit, push, pull, and merge workflows with consequence explanations. Do not use for advanced Git history surgery, worktrees, rebase-first workflows, or full Git/GitHub account setup.'
 ---
 
 # Plain Git for Humans

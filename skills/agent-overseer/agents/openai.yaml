@@ -1,0 +1,6 @@
+interface:
+  display_name: "Agent Overseer"
+  short_description: "Coordinate multi-agent development while preserving continuity, delegation boundaries, and verification evidence"
+  default_prompt: "Use $agent-overseer as a parent-only control plane: reconstruct continuity, delegate every production unit, route work to the cheapest capable agent, inspect returned artifacts, and stop only with verified evidence or a named blocker. Never implement directly."
+policy:
+  allow_implicit_invocation: false

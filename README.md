@@ -6,6 +6,7 @@ Shareable skills for OpenAI Codex and Claude Code.
 
 | Skill | Folder |
 | --- | --- |
+| Agent Overseer | `skills/agent-overseer` |
 | Agent Workflow Optimizer | `skills/agent-workflow-optimizer` |
 | Plain Git for Humans | `skills/plain-git-for-humans` |
 | Git pro lidi | `skills/git-pro-lidi` |
@@ -16,6 +17,7 @@ Use the Codex skill installer with the GitHub URL for the skill folder.
 
 ```bash
 $skill-installer install https://github.com/JanMolcik/codex-skills/tree/main/skills/agent-workflow-optimizer
+$skill-installer install https://github.com/JanMolcik/codex-skills/tree/main/skills/agent-overseer
 $skill-installer install https://github.com/JanMolcik/codex-skills/tree/main/skills/plain-git-for-humans
 $skill-installer install https://github.com/JanMolcik/codex-skills/tree/main/skills/git-pro-lidi
 ```

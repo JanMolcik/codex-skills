@@ -7,6 +7,7 @@ Shareable skills for OpenAI Codex and Claude Code.
 | Skill | Folder |
 | --- | --- |
 | Agent Overseer | `skills/agent-overseer` |
+| Agent Overseer — Claude Code bridge | `skills/agent-overseer/variants/claude-code` |
 | Agent Workflow Optimizer | `skills/agent-workflow-optimizer` |
 | Plain Git for Humans | `skills/plain-git-for-humans` |
 | Git pro lidi | `skills/git-pro-lidi` |
@@ -53,6 +54,14 @@ cp -R skills/plain-git-for-humans /path/to/project/.claude/skills/
 ```
 
 Replace `plain-git-for-humans` with any folder from the Included Skills table.
+
+For Agent Overseer, install the Claude Code discovery bridge into the standard
+skill folder. The bridge loads the canonical protocol from `~/.agents`:
+
+```bash
+mkdir -p ~/.claude/skills/agent-overseer
+cp skills/agent-overseer/variants/claude-code/SKILL.md ~/.claude/skills/agent-overseer/SKILL.md
+```
 
 Without Git, download the repository ZIP from GitHub and copy one folder from
 `skills/` into `~/.claude/skills/` or `.claude/skills/`.

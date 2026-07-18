@@ -55,10 +55,13 @@ cp -R skills/plain-git-for-humans /path/to/project/.claude/skills/
 
 Replace `plain-git-for-humans` with any folder from the Included Skills table.
 
-For Agent Overseer, install the Claude Code discovery bridge into the standard
-skill folder. The bridge loads the canonical protocol from `~/.agents`:
+For Agent Overseer, install the canonical protocol into the shared `.agents`
+folder and the Claude Code discovery bridge into the standard Claude skill
+folder:
 
 ```bash
+mkdir -p ~/.agents/skills/agent-overseer
+cp skills/agent-overseer/SKILL.md ~/.agents/skills/agent-overseer/SKILL.md
 mkdir -p ~/.claude/skills/agent-overseer
 cp skills/agent-overseer/variants/claude-code/SKILL.md ~/.claude/skills/agent-overseer/SKILL.md
 ```
